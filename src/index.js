@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Home from './container/Home/Home';
+// import { createStore } from 'redux';
+// import { Provider } from 'react-redux';
+// import rootReducer from './redux/GlobalReducer';
+
+// //store
+// const store = createStore(rootReducer);
+
+// ReactDOM.render(
+//   <Provider store={store}>
+//     <Home />
+//   </Provider>,
+//   document.getElementById('root')
+// );
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Home />,
   document.getElementById('root')
 );
 
